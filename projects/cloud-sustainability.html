@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Sustainability Agent — Anika Gupte</title>
+<meta name="description" content="A Gemini-powered decision-matrix agent giving startups sustainability-first cloud deployment plans. Tested against Airbnb, Spotify and Duolingo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/projects.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="../index.html" class="navbar__logo">ANIKA<span>.</span>GUPTE</a>
+    <button class="navbar__burger" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="navbar__links-wrap">
+      <div class="navbar__links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../content.html">Content</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="navbar__socials">
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="container page-hero">
+  <a href="../projects.html" class="page-hero__back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    all projects
+  </a>
+  <span class="eyebrow">AI research / project 02</span>
+  <h1>Using AI to Make Cloud Computing More Sustainable</h1>
+  <p>78% of business leaders say they've adopted cloud technology — but more than half can't see the return on it. This project investigates whether a weighted scoring system combined with an LLM call can produce reliable, sustainability-first cloud deployment plans for startups who can't afford a consultant.</p>
+  <div class="full-proj-card__links" style="margin-top:1.5rem;">
+    <a href="https://github.com/anikagupte/cloud-deployment-agent" target="_blank" rel="noopener" class="btn btn--primary">View on GitHub ↗</a>
+    <a href="https://zenodo.org/records/20835820" target="_blank" rel="noopener" class="btn btn--ghost">Zenodo record ↗</a>
+  </div>
+</header>
+
+<section class="container section--tight">
+  <div class="repo-banner reveal" style="background:linear-gradient(135deg, var(--navy), var(--navy-panel));">
+    <div class="repo-banner__left">
+      <div class="repo-banner__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--cream)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      </div>
+      <div class="repo-banner__text">
+        <strong>Official publication — Zenodo</strong>
+        <span>Open-access research record, citable with a permanent DOI</span>
+      </div>
+    </div>
+    <a href="https://zenodo.org/records/20835820" target="_blank" rel="noopener" class="btn btn--light">View record ↗</a>
+  </div>
+</section>
+
+<section class="container section--tight prose">
+  <h3>The gap this fills</h3>
+  <p>Cloud data centres consume enormous resources — global water use alone exceeds 560 billion litres a year. But cloud computing also has real potential to cut environmental impact: moving common workloads to the cloud can reduce energy use by up to 87%. The problem isn't the technology, it's that small organisations rarely have a specialist available to make sustainability-literate deployment decisions. So I built one.</p>
+  <p>I looked at the two existing AI cloud advisory tools on the market first. Neither considers sustainability as a pillar of its recommendations, and one is locked to a single provider with under 5% market share. That's the gap.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="stat-band reveal">
+    <div class="stat-band__item">
+      <div class="stat-band__num">78%</div>
+      <div class="stat-band__label">leaders adopted cloud tech (PwC)</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">560bn L</div>
+      <div class="stat-band__label">water used by data centres / year</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">87%</div>
+      <div class="stat-band__label">possible energy reduction via cloud migration</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">3–4K</div>
+      <div class="stat-band__label">words per generated deployment plan</div>
+    </div>
+  </div>
+</section>
+
+<section class="container section--tight prose">
+  <h3>How the decision matrix works</h3>
+  <p>The agent takes six inputs — budget, storage needs, technical expertise, optional security and growth requirements, and a sustainability weighting from 1–100 — and scores Amazon Web Services, Google Cloud and Microsoft Azure against cost, scalability, sustainability (using PUE and WUE metrics), geographic coverage and security. Whichever priority the business names gets its weighting doubled before the final score is calculated.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="code-window">
+    <div class="code-window__bar">
+      <span class="code-window__dot"></span><span class="code-window__dot"></span><span class="code-window__dot"></span>
+      <span class="code-window__filename">code/main.py — calculate_scores()</span>
+    </div>
+    <pre><code><span class="tok-kw">def</span> <span class="tok-fn">calculate_scores</span>(inputs):
+    <span class="tok-com">"""calculate scores using weightings"""</span>
+    cost_score = sustainability_score = security_score = <span class="tok-num">1.0</span>
+    scalability_score = complexity_score = customisability_score = <span class="tok-num">1.0</span>
+
+    <span class="tok-com"># double the weighting of whatever the business says matters most</span>
+    <span class="tok-kw">if</span> inputs[<span class="tok-str">"top_priority"</span>] == <span class="tok-str">"sustainability"</span>:
+        sustainability_score *= <span class="tok-num">2</span>
+    <span class="tok-kw">elif</span> inputs[<span class="tok-str">"top_priority"</span>] == <span class="tok-str">"scalability"</span>:
+        scalability_score *= <span class="tok-num">2</span>
+
+    sustainability_score *= inputs[<span class="tok-str">"sustainability"</span>]
+
+    <span class="tok-kw">if</span> inputs[<span class="tok-str">"expertise"</span>] == <span class="tok-str">"none"</span>:
+        management_overhead *= <span class="tok-num">2</span>
+        complexity_score *= <span class="tok-num">2</span>
+    <span class="tok-com"># ...scaled similarly for basic / moderate / high / expert</span>
+
+    <span class="tok-kw">return</span> {<span class="tok-str">"Cost"</span>: cost_score, <span class="tok-str">"Sustainability"</span>: sustainability_score,
+            <span class="tok-str">"Scalability"</span>: scalability_score, <span class="tok-str">"Security"</span>: security_score}</code></pre>
+  </div>
+  <p class="code-caption">From <a href="https://github.com/anikagupte/cloud-deployment-agent/blob/main/code/main.py" target="_blank" rel="noopener">code/main.py</a> — weights are then multiplied against the provider scores read from the Excel decision matrix.</p>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Why Gemini, not Vertex AI Agent Builder</h3>
+  <p>I originally planned to build this on Google's Vertex AI Agent Builder — well documented, built for scale, and a natural fit for an agentic system. But once development started, the decision-matrix logic turned out to be more code-heavy than agent-shaped: a Python script plus a single API call suited it better, because the program is making calculated decisions rather than the model speculating, which cuts the risk of hallucination. So the plan shifted to the Gemini API directly, called via Google's newer <code>google-genai</code> library so the project could authenticate through Vertex AI without a billed API key.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="code-window">
+    <div class="code-window__bar">
+      <span class="code-window__dot"></span><span class="code-window__dot"></span><span class="code-window__dot"></span>
+      <span class="code-window__filename">code/main.py — get_recommendation()</span>
+    </div>
+    <pre><code><span class="tok-kw">def</span> <span class="tok-fn">get_recommendation</span>(winners, inputs):
+    <span class="tok-com">"""create prompt and call Gemini API"""</span>
+    prompt = <span class="tok-str">"You are an experienced, specialised cloud deployment advisor for startups."</span>
+    prompt += <span class="tok-str">" Give a detailed explanation of why the chosen strategy is best suited for them"</span>
+    prompt += <span class="tok-str">" and produce a step-by-step plan for deployment."</span>
+    prompt += <span class="tok-str">" Specifically reference sustainability from water and energy usage —"</span>
+    prompt += <span class="tok-str">" the aim should be to save these resources."</span>
+    prompt += <span class="tok-str">f" Monthly budget: {inputs['budget']} USD."</span>
+    prompt += <span class="tok-str">f" Storage requirements: {inputs['storage']} TB."</span>
+    <span class="tok-com"># ...remaining inputs appended the same way</span>
+
+    response = client.models.generate_content(model=<span class="tok-str">"gemini-2.0-flash"</span>, contents=prompt)
+    <span class="tok-kw">return</span> response.text</code></pre>
+  </div>
+  <p class="code-caption">A role-based <em>and</em> contextual prompt — the model is given a persona, then the calculated winners and raw business constraints, so it can explain rather than guess.</p>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Testing against real companies</h3>
+  <p>The first test used a synthetic startup — $200/month budget, 3TB storage, scalability as the top priority — and the agent returned a 4,000-word plan covering justification, sustainability practices, and a day-by-week-by-month rollout. To actually stress-test it, I then fed it the early-stage profiles of three real companies and compared its advice to the route they really took.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="testcase-row reveal">
+    <div class="testcase-card">
+      <div class="testcase-card__name">Airbnb</div>
+      <span class="testcase-card__result">agent said Google Cloud · they chose AWS</span>
+      <p>Partial match — both public cloud. The mismatch on provider likely reflects Gemini's own bias toward Google Cloud, explored below.</p>
+    </div>
+    <div class="testcase-card">
+      <div class="testcase-card__name">Spotify</div>
+      <span class="testcase-card__result">agent said Google Cloud · they chose Google Cloud</span>
+      <p>Exact match on provider and cloud type. Spotify actually migrated to GCP in 2016 for sustainability reasons — strong validation.</p>
+    </div>
+    <div class="testcase-card">
+      <div class="testcase-card__name">Duolingo</div>
+      <span class="testcase-card__result">agent said Google Cloud (IaaS) · they chose AWS (PaaS)</span>
+      <p>Different provider, but IaaS and PaaS are one abstraction level apart with mostly overlapping features — a close result.</p>
+    </div>
+  </div>
+  <p style="font-size:0.9rem; color:var(--slate); margin-top:1rem;">Full test case documents (Airbnb, Spotify, Duolingo, and the initial synthetic test) are in the <a href="https://github.com/anikagupte/cloud-deployment-agent/tree/main/results" target="_blank" rel="noopener" style="color:var(--pink); font-weight:600;">results/ folder</a> of the repository.</p>
+</section>
+
+<section class="container section--tight prose">
+  <h3>The honest limitation</h3>
+  <p>There's a clear pattern across every test: the agent leans toward recommending Google Cloud. Since the system calls the Gemini API — itself a Google product — that's a real, acknowledged risk of (possibly unconscious, possibly hard-coded) bias toward its own ecosystem. A future version should call multiple models from different providers and combine the results rather than trusting a single LLM's judgement.</p>
+
+  <h3>Ethics &amp; data</h3>
+  <p>Under GDPR Article 22, automated decision-making involving personal data carries specific obligations. Since this tool only ever processes business operating parameters — budget, storage, priorities — and stores nothing after the session ends, it stays clear of personal data handling entirely while still being designed with that regulation in mind from the start.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="doc-preview-card reveal">
+    <div class="doc-preview-card__thumb">
+      <canvas id="pdf-canvas-cloud" class="pdf-thumb" data-url="../docs/cloud-sustainability-paper.pdf"></canvas>
+      <div class="doc-loading" id="pdf-loading-cloud">loading preview…</div>
+    </div>
+    <div class="doc-preview-card__body">
+      <span class="doc-preview-card__label">// full research paper</span>
+      <h4 class="doc-preview-card__title">Using AI to Make Cloud Computing More Sustainable</h4>
+      <p class="doc-preview-card__desc">Full background research, decision-matrix design, Gemini integration, all four test cases, and a complete Harvard-style bibliography — being prepared for arXiv and Zenodo with a CC BY licence.</p>
+      <a href="../docs/cloud-sustainability-paper.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Open full PDF ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section--tight">
+  <div class="repo-banner reveal">
+    <div class="repo-banner__left">
+      <div class="repo-banner__icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--cream)"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      </div>
+      <div class="repo-banner__text">
+        <strong>anikagupte/cloud-deployment-agent</strong>
+        <span>Python · openpyxl decision matrix · Gemini API</span>
+      </div>
+    </div>
+    <a href="https://github.com/anikagupte/cloud-deployment-agent" target="_blank" rel="noopener" class="btn btn--light">Browse repository ↗</a>
+  </div>
+</section>
+
+<section class="container">
+  <div class="next-proj">
+    <div>
+      <span class="next-proj__label">next project →</span>
+      <div class="next-proj__title">HG5_ELECTR!C — VEX Robotics</div>
+    </div>
+    <a href="vex-robotics.html" class="btn btn--primary">View project</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Anika<span>.</span>Gupte</div>
+        <p class="footer__tagline">Year 12 computer science student, building systems that think about sustainability, education and trust.</p>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">sitemap</span>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../content.html">Content Creation</a>
+        <a href="../about.html">About &amp; Other</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">elsewhere</span>
+        <a href="https://github.com/anikagupte" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener">TikTok ↗</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 anika gupte</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  if (window['pdfjsLib']) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    const canvas = document.getElementById('pdf-canvas-cloud');
+    const loadingEl = document.getElementById('pdf-loading-cloud');
+    if (canvas) {
+      pdfjsLib.getDocument(canvas.dataset.url).promise.then(pdf => pdf.getPage(1)).then(page => {
+        const viewport = page.getViewport({ scale: 0.6 });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise.then(() => {
+          if (loadingEl) loadingEl.style.display = 'none';
+        });
+      }).catch(() => { if (loadingEl) loadingEl.textContent = 'preview unavailable'; });
+    }
+  }
+</script>
+</body>
+</html>

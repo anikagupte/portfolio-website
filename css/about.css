@@ -1,0 +1,161 @@
+/* ============================================
+   ABOUT PAGE
+   ============================================ */
+
+.about-hero {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: flex-start;
+}
+.about-hero__text { flex: 1.4; }
+.about-hero__text h1 { font-size: var(--fs-display-l); margin-bottom: var(--space-m); }
+.about-hero__text p { font-size: var(--fs-body-l); margin-bottom: var(--space-s); }
+.about-hero__sidebar { flex: 1; }
+
+.fact-list {
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+}
+.fact-list dt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--pink);
+  margin-top: var(--space-s);
+}
+.fact-list dt:first-child { margin-top: 0; }
+.fact-list dd {
+  font-size: 0.92rem;
+  color: var(--navy);
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+@media (max-width: 860px) {
+  .about-hero { flex-direction: column; }
+}
+
+/* --- Bridges: CS-relevant extracurriculars --- */
+.bridge-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+.bridge-card {
+  display: flex;
+  gap: var(--space-l);
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-l);
+  padding: var(--space-l);
+  align-items: center;
+}
+.bridge-card__icon {
+  flex: 0 0 64px;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--cream-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bridge-card__icon svg { width: 28px; height: 28px; color: var(--navy); }
+.bridge-card__body { flex: 1; }
+.bridge-card__role {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--pink);
+  display: block;
+  margin-bottom: 0.3em;
+}
+.bridge-card h3 { font-size: 1.25rem; color: var(--navy); margin-bottom: 0.4em; }
+.bridge-card .bridge {
+  margin-top: 0.6em;
+  padding-top: 0.6em;
+  border-top: 1px dashed var(--hairline);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--navy);
+}
+.bridge-card .bridge strong { color: var(--pink); font-style: normal; }
+
+@media (max-width: 700px) {
+  .bridge-card { flex-direction: column; text-align: center; }
+}
+
+/* --- Awards wall --- */
+.awards-wall {
+  display: flex;
+  flex-wrap: wrap;
+}
+.award-tile {
+  flex: 1 1 280px;
+  margin: 0 var(--space-s) var(--space-s) 0;
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+}
+.award-tile__date {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--slate);
+}
+.award-tile__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0.3em 0;
+}
+.award-tile__desc { font-size: 0.82rem; }
+
+/* --- Speech excerpt --- */
+.speech-block {
+  background: var(--navy);
+  border-radius: var(--radius-l);
+  padding: var(--space-l);
+  color: var(--cream);
+}
+.speech-block__quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: var(--space-m);
+}
+.speech-block__quote::before { content: '"'; color: var(--pink); }
+.speech-block__quote::after { content: '"'; color: var(--pink); }
+.speech-block__meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate-light);
+}
+
+/* --- M3 story block --- */
+.m3-block {
+  display: flex;
+  gap: var(--space-l);
+  align-items: center;
+}
+.m3-block__media {
+  flex: 0 0 320px;
+  height: 220px;
+  border-radius: var(--radius-m);
+  background: var(--cream-dim);
+  border: 1px dashed var(--hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--slate-light);
+  text-align: center;
+  padding: var(--space-s);
+}
+.m3-block__body { flex: 1; }
+
+@media (max-width: 760px) {
+  .m3-block { flex-direction: column; }
+  .m3-block__media { width: 100%; }
+}

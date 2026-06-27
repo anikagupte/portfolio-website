@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revology — Anika Gupte</title>
+<meta name="description" content="A full-stack Django revision platform with a shared notes library, RAG-rated flashcards and PDF.js document previews. 18 months in the making.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/projects.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="../index.html" class="navbar__logo">ANIKA<span>.</span>GUPTE</a>
+    <button class="navbar__burger" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="navbar__links-wrap">
+      <div class="navbar__links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../content.html">Content</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="navbar__socials">
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="container page-hero">
+  <a href="../projects.html" class="page-hero__back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    all projects
+  </a>
+  <span class="eyebrow">web platform / project 01</span>
+  <h1>Revology — The Ideal Revision Website</h1>
+  <p>During my GCSEs I kept running into the same problem: plenty of great resources existed, but never in one place. Revology is my answer — a Django platform where students can build a shared library of notes and flashcards instead of starting from scratch every exam season.</p>
+  <div class="full-proj-card__links" style="margin-top:1.5rem;">
+    <a href="https://revology.pythonanywhere.com/supernova/signup" target="_blank" rel="noopener" class="btn btn--primary">Try the live site ↗</a>
+    <a href="https://github.com/anikagupte/revology" target="_blank" rel="noopener" class="btn btn--ghost">View on GitHub ↗</a>
+  </div>
+</header>
+
+<section class="container section--tight">
+  <div class="stat-band reveal">
+    <div class="stat-band__item">
+      <div class="stat-band__num">18</div>
+      <div class="stat-band__label">months in development</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">4</div>
+      <div class="stat-band__label">languages used</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">78</div>
+      <div class="stat-band__label">students surveyed</div>
+    </div>
+    <div class="stat-band__item">
+      <div class="stat-band__num">1 in 2</div>
+      <div class="stat-band__label">couldn't find resources easily, pre-Revology</div>
+    </div>
+  </div>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Why it exists</h3>
+  <p>One of the main problems as a student was figuring out which platforms to use, what to use them for, and how to keep all my revision together. So Revology became a library of resources, where a student could revise, track progress and access everything else from one hub — flashcards and notes, growing with every user who contributes to it.</p>
+
+  <h3>Market research first</h3>
+  <p>Before writing a line of code, I surveyed 78 students from Years 7–12. 83% didn't feel completely sure how to revise. 65% made their own notes, and a further 18% relied on pre-made ones. 58% said finding pre-made notes for their subjects "requires a bit of digging." That gap — a common platform where resources can be accessed from one place — is exactly what Revology tries to close.</p>
+  <p>I was careful about the limits of that data too: the sample came from one independent, academically competitive school, so if anything the national picture is probably worse than what I found.</p>
+
+  <h3>Planning the database</h3>
+  <p>Before any Python was written, every table was mapped out with its primary and foreign keys — Users, Notes, Flashcard Sets, Flashcards, and an Activity table to track usage. Notes and flashcards both have a many-to-one relationship with a user (the author) and with a subject; flashcards also belong to a flashcard set. That structure translated almost directly into the Django models below.</p>
+</section>
+
+<section class="container section--tight">
+  <div class="code-window">
+    <div class="code-window__bar">
+      <span class="code-window__dot"></span><span class="code-window__dot"></span><span class="code-window__dot"></span>
+      <span class="code-window__filename">supernova/models.py</span>
+    </div>
+    <pre><code><span class="tok-kw">from</span> django.db <span class="tok-kw">import</span> models
+<span class="tok-kw">from</span> django.contrib.auth.models <span class="tok-kw">import</span> User
+
+<span class="tok-kw">class</span> <span class="tok-cls">Notes</span>(models.Model):
+    notes_content = models.TextField()
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name=<span class="tok-str">'authored_notes'</span>)
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="tok-num">30</span>)
+    date_uploaded = models.DateTimeField(<span class="tok-str">'date uploaded'</span>, auto_now_add=<span class="tok-kw">True</span>)
+    image = models.ImageField(null=<span class="tok-kw">True</span>, blank=<span class="tok-kw">True</span>)
+
+    <span class="tok-kw">def</span> <span class="tok-fn">__str__</span>(self):
+        <span class="tok-kw">return</span> <span class="tok-str">f'{self.id}: {self.title} ({self.subject})'</span>
+
+
+<span class="tok-kw">class</span> <span class="tok-cls">Flashcard</span>(models.Model):
+    front_of_card = models.TextField(max_length=<span class="tok-num">2000</span>)
+    back_of_card = models.TextField(max_length=<span class="tok-num">2000</span>)
+    flashcard_set = models.ForeignKey(Flashcard_set, on_delete=models.CASCADE, related_name=<span class="tok-str">'flashcards'</span>)
+
+    <span class="tok-kw">def</span> <span class="tok-fn">get_rag</span>(self, user):
+        <span class="tok-com"># returns red/amber/green confidence rating for this user</span>
+        <span class="tok-kw">try</span>:
+            <span class="tok-kw">return</span> Flashcard_rating.objects.filter(flashcard=self, user=user)[<span class="tok-num">0</span>].status.colour
+        <span class="tok-kw">except</span> IndexError:
+            <span class="tok-kw">return</span> Status.red</code></pre>
+  </div>
+  <p class="code-caption">Three of the eight models in <a href="https://github.com/anikagupte/revology/blob/main/supernova/models.py" target="_blank" rel="noopener">supernova/models.py</a> — Notes and Flashcard, with the RAG (red/amber/green) confidence rating logic that drives the flashcard filtering feature.</p>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Choices I made on purpose</h3>
+  <p>Two decisions shaped the whole build, and I want to be upfront about why I made them rather than just listing the stack.</p>
+</section>
+
+<section class="container section--tight">
+  <table class="approach-table reveal">
+    <thead><tr><th>decision</th><th>option A</th><th>option B (chosen)</th><th>why</th></tr></thead>
+    <tbody>
+      <tr><td>Web framework</td><td>Flask</td><td class="chosen">Django</td><td>Built-in user authentication and admin interface meant more time for Revology's actual features, not boilerplate.</td></tr>
+      <tr><td>CSS framework</td><td>Bootstrap</td><td class="chosen">Bulma</td><td>No JS dependencies to fight with on a Python-first project, and cleaner documentation.</td></tr>
+      <tr><td>Dev process</td><td>Waterfall</td><td class="chosen">Iterative</td><td>Design, code and test happened in small overlapping cycles rather than one strict sequence — visible in the Gantt chart below.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="container section--tight prose">
+  <h3>The two JavaScript features</h3>
+  <p>Almost everything is server-rendered Python and Django templates, but two features needed real client-side JS.</p>
+  <p><strong>Flipping flashcards.</strong> Each card needed to flip on click, replicating a physical flashcard's front/back. The script listens for a click, toggles which side is showing, and updates the background colour as a visual cue:</p>
+</section>
+
+<section class="container section--tight">
+  <div class="code-window">
+    <div class="code-window__bar">
+      <span class="code-window__dot"></span><span class="code-window__dot"></span><span class="code-window__dot"></span>
+      <span class="code-window__filename">view_flashcards.html — flipCard()</span>
+    </div>
+    <pre><code><span class="tok-kw">function</span> <span class="tok-fn">flipCard</span>() {
+    <span class="tok-kw">if</span> (cards.length === <span class="tok-num">0</span>) <span class="tok-kw">return</span>;
+    flipped = !flipped;
+    <span class="tok-kw">const</span> card = cards[current];
+    document.getElementById(<span class="tok-str">'card-text'</span>).textContent = flipped ? card.back : card.front;
+    document.getElementById(<span class="tok-str">'flip-hint'</span>).textContent = flipped ? <span class="tok-str">'Click to flip back'</span> : <span class="tok-str">'Click to flip'</span>;
+    document.getElementById(<span class="tok-str">'flashcard'</span>).style.background = flipped ? <span class="tok-str">'#f0fdf4'</span> : <span class="tok-str">'white'</span>;
+    document.getElementById(<span class="tok-str">'rag-section'</span>).style.display = flipped ? <span class="tok-str">'block'</span> : <span class="tok-str">'none'</span>;
+}</code></pre>
+  </div>
+  <p class="code-caption">From <a href="https://github.com/anikagupte/revology" target="_blank" rel="noopener">supernova/templates/supernova/view_flashcards.html</a>.</p>
+
+  <p style="margin-top:2rem;"><strong>Previewing PDFs.</strong> Revology's own verified notes carry more weight than user uploads, so I wanted a way to show their first page before the click — using Mozilla's PDF.js library to render page one onto a canvas, since PDFs can't display natively inside a <code>&lt;div&gt;</code>:</p>
+</section>
+
+<section class="container section--tight">
+  <div class="code-window">
+    <div class="code-window__bar">
+      <span class="code-window__dot"></span><span class="code-window__dot"></span><span class="code-window__dot"></span>
+      <span class="code-window__filename">homepage.html — PDF.js preview</span>
+    </div>
+    <pre><code>pdfjsLib.GlobalWorkerOptions.workerSrc = <span class="tok-str">'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'</span>;
+document.querySelectorAll(<span class="tok-str">'.pdf-thumb'</span>).forEach(canvas => {
+    <span class="tok-kw">const</span> url = canvas.dataset.url;
+    pdfjsLib.getDocument(url).promise.then(pdf => pdf.getPage(<span class="tok-num">1</span>)).then(page => {
+        <span class="tok-kw">const</span> viewport = page.getViewport({ scale: <span class="tok-num">1.5</span> });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height / <span class="tok-num">2</span>;
+        page.render({ canvasContext: canvas.getContext(<span class="tok-str">'2d'</span>), viewport });
+    });
+});</code></pre>
+  </div>
+  <p class="code-caption">This exact technique now renders the live preview below — for the actual project write-up.</p>
+</section>
+
+<!-- Live PDF.js powered preview of the actual write-up, using the same technique described above -->
+<section class="container section--tight">
+  <div class="doc-preview-card reveal">
+    <div class="doc-preview-card__thumb">
+      <canvas id="pdf-canvas-revology" class="pdf-thumb" data-url="../docs/revology-writeup.pdf"></canvas>
+      <div class="doc-loading" id="pdf-loading-revology">loading preview…</div>
+    </div>
+    <div class="doc-preview-card__body">
+      <span class="doc-preview-card__label">// full write-up</span>
+      <h4 class="doc-preview-card__title">Revology — The Ideal Revision Website (full document)</h4>
+      <p class="doc-preview-card__desc">Planning, market research, database design, the iterative build, ethics &amp; GDPR considerations, beta feedback and a full bibliography — exactly as submitted for my CREST Gold Award.</p>
+      <a href="../docs/revology-writeup.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Open full PDF ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Ethics &amp; GDPR</h3>
+  <p>Because the site collects user data, I had to take data protection seriously from the start. Sign-up only asks for a first/last name, email, username and password — all credential handling is delegated to Django's built-in authentication system, which encrypts passwords and follows established security practice. User-created resources fall under UK GDPR, which requires data to be collected lawfully, stored securely, and used only for its stated purpose.</p>
+  <p>For the beta survey, every participant knew their data would be used in this write-up, the survey was anonymous, and no personal information beyond year group was collected.</p>
+
+  <h3>What beta users said</h3>
+  <div class="pullquote">"It's really useful to divide Revology notes and community notes because I know I can trust what I'm reading."</div>
+  <p>Another suggested adding past paper questions organised by topic — a strong idea for Version 2, alongside activity streaks and leaderboards, in the spirit of how platforms like Duolingo gamify consistency.</p>
+
+  <h3>What I'd actually say happened</h3>
+  <p>I learned how to navigate Django properly — from authentication to database administration — across four languages, the most I'd used in a single project, deployed on PythonAnywhere via a Linux Bash console. But the real takeaway wasn't technical. It was the rhythm of the development process itself: write, debug, test, repeat, for months.</p>
+</section>
+
+<section class="container section--tight prose">
+  <h3>Bibliography</h3>
+  <p style="font-size:0.85rem; color:var(--slate);">
+    Dansart, J. (2025) <em>Bulma CSS documentation</em>. bulma.io/documentation/<br>
+    Django Software Foundation (2025) <em>Django documentation</em>. docs.djangoproject.com<br>
+    Elliot, A.J. (2015) Color and psychological functioning: a review of theoretical and empirical work. <em>Frontiers in Psychology</em>, 6, p.368.<br>
+    Information Commissioner's Office (2021) <em>A guide to the data protection principles</em>. ico.org.uk<br>
+    Larman, C. and Basili, V.R. (2003) Iterative and incremental developments: a brief history. <em>Computer</em>, 36(6), pp.47–56.<br>
+    Shortt, M. et al. (2023) Gamification in mobile-assisted language learning. <em>Computer Assisted Language Learning</em>, 36(6), pp.517–544.
+  </p>
+</section>
+
+<section class="container section--tight">
+  <div class="repo-banner reveal">
+    <div class="repo-banner__left">
+      <div class="repo-banner__icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--cream)"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      </div>
+      <div class="repo-banner__text">
+        <strong>anikagupte/revology</strong>
+        <span>HTML 55.5% · Python 44.5% · 4 commits</span>
+      </div>
+    </div>
+    <a href="https://github.com/anikagupte/revology" target="_blank" rel="noopener" class="btn btn--light">Browse repository ↗</a>
+  </div>
+</section>
+
+<section class="container">
+  <div class="next-proj">
+    <div>
+      <span class="next-proj__label">next project →</span>
+      <div class="next-proj__title">Cloud Sustainability Agent</div>
+    </div>
+    <a href="cloud-sustainability.html" class="btn btn--primary">View project</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Anika<span>.</span>Gupte</div>
+        <p class="footer__tagline">Year 12 computer science student, building systems that think about sustainability, education and trust.</p>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">sitemap</span>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../content.html">Content Creation</a>
+        <a href="../about.html">About &amp; Other</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">elsewhere</span>
+        <a href="https://github.com/anikagupte" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener">TikTok ↗</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 anika gupte</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // PDF.js preview render
+  if (window['pdfjsLib']) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    const canvas = document.getElementById('pdf-canvas-revology');
+    const loadingEl = document.getElementById('pdf-loading-revology');
+    if (canvas) {
+      pdfjsLib.getDocument(canvas.dataset.url).promise.then(pdf => pdf.getPage(1)).then(page => {
+        const viewport = page.getViewport({ scale: 0.6 });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise.then(() => {
+          if (loadingEl) loadingEl.style.display = 'none';
+        });
+      }).catch(() => { if (loadingEl) loadingEl.textContent = 'preview unavailable'; });
+    }
+  }
+</script>
+</body>
+</html>

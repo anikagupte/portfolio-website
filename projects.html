@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Anika Gupte</title>
+<meta name="description" content="Revology, a Django revision platform. A Gemini-powered cloud sustainability agent. Autonomous VEX robotics code. Three real, shipped CS projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">ANIKA<span>.</span>GUPTE</a>
+    <button class="navbar__burger" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="navbar__links-wrap">
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="content.html">Content</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="navbar__socials">
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="container page-hero">
+  <span class="eyebrow">// projects</span>
+  <h1>Three things I've actually shipped.</h1>
+  <p>Not coursework, not tutorials followed line-by-line — real systems with real users, real bugs, and real write-ups. Each links straight through to the GitHub repository and full research document.</p>
+</header>
+
+<section class="container section--tight">
+  <div class="full-proj-list">
+
+    <article class="full-proj-card reveal">
+      <div class="full-proj-card__main">
+        <div class="full-proj-card__meta">
+          <span class="tag">web platform</span>
+          <span>Jan 2025 – Jun 2026</span>
+          <span>CREST Gold Award</span>
+        </div>
+        <h3>Revology — The Ideal Revision Website</h3>
+        <p>A full-stack Django platform built to solve a problem I had during GCSEs: revision resources were everywhere, and nowhere at once. Shared notes library, RAG-rated flashcard sets, PDF.js-powered document previews — built across four languages over 18 months.</p>
+        <div class="full-proj-card__stack">
+          <span class="chip">Python</span><span class="chip">Django</span><span class="chip">Bulma</span><span class="chip">JavaScript</span><span class="chip">PDF.js</span><span class="chip">SQLite</span>
+        </div>
+        <div class="full-proj-card__links">
+          <a href="projects/revology.html" class="btn btn--primary">Read the full write-up</a>
+          <a href="https://github.com/anikagupte/revology" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="full-proj-card__side">
+        <div class="full-proj-card__highlight">
+          <span class="full-proj-card__highlight-label">// why it's interesting</span>
+          <div class="full-proj-card__highlight-stat">18 months</div>
+          <p class="full-proj-card__highlight-desc">of iterative development, surveying 78 students, then designing a relational database from scratch — not just following a tutorial.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="full-proj-card reveal">
+      <div class="full-proj-card__main">
+        <div class="full-proj-card__meta">
+          <span class="tag">AI research</span>
+          <span>Nov 2025 – Jun 2026</span>
+          <span>Bound for Zenodo</span>
+        </div>
+        <h3>Using AI to Make Cloud Computing More Sustainable</h3>
+        <p>A weighted decision-matrix agent, powered by the Gemini API, that gives startups a sustainability-first cloud deployment plan from just five inputs. Tested against the real growth paths of Airbnb, Spotify and Duolingo.</p>
+        <div class="full-proj-card__stack">
+          <span class="chip">Python</span><span class="chip">Gemini API</span><span class="chip">openpyxl</span><span class="chip">Google Cloud</span>
+        </div>
+        <div class="full-proj-card__links">
+          <a href="projects/cloud-sustainability.html" class="btn btn--primary">Read the full write-up</a>
+          <a href="https://github.com/anikagupte/cloud-deployment-agent" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="full-proj-card__side">
+        <div class="full-proj-card__highlight">
+          <span class="full-proj-card__highlight-label">// why it's interesting</span>
+          <div class="full-proj-card__highlight-stat">78% / 50%</div>
+          <p class="full-proj-card__highlight-desc">of leaders have adopted cloud tech, but can't see the return on it (PwC) — that gap is exactly what the agent targets.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="full-proj-card reveal">
+      <div class="full-proj-card__main">
+        <div class="full-proj-card__meta">
+          <span class="tag">robotics</span>
+          <span>Jul 2025 – Mar 2026</span>
+          <span>UK Nationals 2026</span>
+        </div>
+        <h3>HG5_ELECTR!C — VEX Robotics</h3>
+        <p>Autonomous and driver-control programming for our team's competition robot, written in both C++ and Python across a season that took us from first-time entrants to UK Nationals — on hardware that never behaved quite the same way twice.</p>
+        <div class="full-proj-card__stack">
+          <span class="chip">C++</span><span class="chip">Python</span><span class="chip">VEXcode V5</span>
+        </div>
+        <div class="full-proj-card__links">
+          <a href="projects/vex-robotics.html" class="btn btn--primary">Read the full write-up</a>
+          <a href="https://github.com/anikagupte/HG5_ELECTRIC" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="full-proj-card__side">
+        <div class="full-proj-card__highlight">
+          <span class="full-proj-card__highlight-label">// why it's interesting</span>
+          <div class="full-proj-card__highlight-stat">1st attempt</div>
+          <p class="full-proj-card__highlight-desc">qualifying for Nationals as a first-year team — and the lesson that the same code can produce a different outcome every time on real hardware.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Other research / smaller projects -->
+<section class="container section--tight">
+  <div class="section-head">
+    <span class="mono-label">// also worth a look</span>
+    <h2>Other research &amp; writing</h2>
+  </div>
+  <div class="proj-grid" data-stagger>
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">essay</span>
+      <h3 class="proj-card__title">The Future of Work</h3>
+      <p class="proj-card__desc">An essay on how automation is reshaping the job market, and the technical and soft skills young people will need to stay ahead of it.</p>
+      <a href="docs/future-of-work.pdf" target="_blank" class="proj-card__link">Read the PDF <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+    </article>
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">competition mathematics</span>
+      <h3 class="proj-card__title">M3 Challenge — Online Sports Gambling</h3>
+      <p class="proj-card__desc">Stochastic modelling of online sports gambling with a team of five, placing 2nd of 980 teams worldwide for Technical Computing. Full write-up on the About page.</p>
+      <a href="about.html#m3" class="proj-card__link">See the story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+    </article>
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">repository</span>
+      <h3 class="proj-card__title">Competitive Programming</h3>
+      <p class="proj-card__desc">A growing collection of competitive programming solutions in Python — UKMT, Bebras and beyond.</p>
+      <a href="https://github.com/anikagupte/competitive-programming" target="_blank" rel="noopener" class="proj-card__link">View on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Anika<span>.</span>Gupte</div>
+        <p class="footer__tagline">Year 12 computer science student, building systems that think about sustainability, education and trust. Currently applying to study CS at Cambridge.</p>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">sitemap</span>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="content.html">Content Creation</a>
+        <a href="about.html">About &amp; Other</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer__links">
+        <span class="footer__heading">elsewhere</span>
+        <a href="https://github.com/anikagupte" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener">TikTok ↗</a>
+        <a href="https://www.taplab.agency/roster/anika" target="_blank" rel="noopener">TapLab ↗</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 anika gupte — built with django energy, deployed with cream &amp; navy</span>
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://github.com/anikagupte" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* ============================================
+   DESIGN TOKENS — Anika Gupte Portfolio
+   ============================================ */
+
+:root {
+  /* Color */
+  --cream:        #FAF8F3;
+  --cream-dim:     #F1EDE3;
+  --navy:          #0F1B2D;
+  --navy-panel:    #16243D;
+  --navy-soft:     #24344E;
+  --pink:          #FF3D81;
+  --pink-soft:     #FFE3EE;
+  --slate:         #5C6B7A;
+  --slate-light:   #8A97A3;
+  --hairline:      #E5DFD2;
+  --hairline-dark: #2B3A54;
+  --white:         #FFFFFF;
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* Type scale */
+  --fs-display-xl: clamp(2.8rem, 6vw, 5.4rem);
+  --fs-display-l:  clamp(2.1rem, 4vw, 3.4rem);
+  --fs-display-m:  clamp(1.6rem, 2.8vw, 2.4rem);
+  --fs-body-l:     1.15rem;
+  --fs-body:       1rem;
+  --fs-small:      0.875rem;
+  --fs-mono:       0.8rem;
+
+  /* Spacing */
+  --space-xs:  0.5rem;
+  --space-s:   1rem;
+  --space-m:   1.75rem;
+  --space-l:   3rem;
+  --space-xl:  5rem;
+  --space-xxl: 8rem;
+
+  /* Radius */
+  --radius-s:  10px;
+  --radius-m:  20px;
+  --radius-l:  32px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-soft: 0 10px 40px -12px rgba(15, 27, 45, 0.12);
+  --shadow-card: 0 4px 24px -4px rgba(15, 27, 45, 0.08);
+  --shadow-pink: 0 12px 32px -8px rgba(255, 61, 129, 0.35);
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 0.2s;
+  --t-med: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

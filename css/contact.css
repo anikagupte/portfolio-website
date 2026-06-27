@@ -1,0 +1,90 @@
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.contact-wrap {
+  display: flex;
+  gap: var(--space-xl);
+}
+.contact-wrap__main { flex: 1.2; }
+.contact-wrap__side { flex: 1; }
+
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+}
+.contact-channel:hover {
+  transform: translateX(4px);
+  border-color: var(--navy);
+  box-shadow: var(--shadow-card);
+}
+.contact-channel__icon {
+  flex: 0 0 48px;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-channel__icon svg { width: 20px; height: 20px; }
+.contact-channel__body { flex: 1; }
+.contact-channel__label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--pink);
+  display: block;
+}
+.contact-channel__value {
+  font-size: 1rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+.contact-channel__arrow {
+  color: var(--slate-light);
+  transition: transform var(--t-fast);
+}
+.contact-channel:hover .contact-channel__arrow { transform: translateX(3px); color: var(--pink); }
+
+.contact-note {
+  background: var(--cream-dim);
+  border-radius: var(--radius-m);
+  padding: var(--space-m);
+  font-size: 0.88rem;
+}
+
+.contact-cta-card {
+  background: linear-gradient(160deg, var(--navy), var(--navy-panel));
+  border-radius: var(--radius-l);
+  padding: var(--space-l);
+  color: var(--cream);
+  height: 100%;
+}
+.contact-cta-card h3 { font-size: 1.5rem; margin-bottom: 0.5em; }
+.contact-cta-card p { color: var(--slate-light); margin-bottom: var(--space-m); }
+.contact-cta-card__list { font-size: 0.85rem; }
+.contact-cta-card__list li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--hairline-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.contact-cta-card__list li:last-child { border-bottom: none; }
+.contact-cta-card__list li::before { content: '→'; color: var(--pink); }
+
+@media (max-width: 860px) {
+  .contact-wrap { flex-direction: column; }
+}
