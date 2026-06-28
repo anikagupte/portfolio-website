@@ -34,6 +34,12 @@
 
 .navbar__logo span { color: var(--pink); }
 
+.navbar__links-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
 .navbar__links {
   display: flex;
   align-items: center;
