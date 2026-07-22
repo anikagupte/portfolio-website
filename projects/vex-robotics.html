@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../css/base.css">
 <link rel="stylesheet" href="../css/layout.css">
 <link rel="stylesheet" href="../css/projects.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 <body>
 
@@ -47,7 +48,7 @@
   </a>
   <span class="eyebrow">robotics / project 02</span>
   <h1>HG5_ELECTR!C — U18 VEX Robotics</h1>
-  <p>Software for our team's competition robot — tank-drive control, a conveyor and descorer mechanism, and autonomous routines, written in both C++ and Python so the same logic could be validated two ways. First season, first Nationals qualification.</p>
+  <p>Software for our team's competition robot — tank-drive control, a conveyor and descorer mechanism, and autonomous routines, written in both C++ and Python so the same logic could be validated two ways. First-time team, qualified to UK Nationals.</p>
   <div class="full-proj-card__links" style="margin-top:1.5rem;">
     <a href="https://github.com/anikagupte/HG5_ELECTRIC" target="_blank" rel="noopener" class="btn btn--primary">View on GitHub ↗</a>
   </div>
@@ -119,7 +120,7 @@
 
 <section class="container section--tight prose">
   <h3>Why both C++ and Python</h3>
-  <p>VEXcode V5 supports both languages on the same hardware, and writing the control logic twice turned out to be a genuinely useful exercise rather than busywork — it forced me to separate "what the robot should do" from "how this particular language expresses it." The Python version below does the same job as the C++ above, including its own random-seed initialisation for autonomous routines (since the V5 brain doesn't have a true hardware RNG):</p>
+  <p>VEXcode V5 supports both languages on the same hardware, and writing the control logic twice turned out to be a genuinely useful exercise rather than busywork — it forced me to separate "what the robot should do" from "how this particular language expresses it." The Python version below does the same job as the C++ above, including its own random-seed initialisation for autonomous routines:</p>
 </section>
 
 <section class="container section--tight">
@@ -157,6 +158,21 @@ initializeRandomSeed()</code></pre>
     <li><strong>Documentation is power.</strong> Keeping a detailed engineering notebook all season was one of the hardest habits to maintain — and the most useful once it existed.</li>
     <li><strong>Robust code matters more on real hardware.</strong> Writing for the real world means predicting situations you wouldn't think to test for in simulation.</li>
   </ul>
+</section>
+
+<section class="container section--tight">
+  <div class="doc-preview-card reveal">
+    <div class="doc-preview-card__thumb">
+      <canvas id="pdf-canvas-vex" class="pdf-thumb" data-url="../docs/vex-notebook.pdf"></canvas>
+      <div class="doc-loading" id="pdf-loading-revology">loading preview…</div>
+    </div>
+    <div class="doc-preview-card__body">
+      <span class="doc-preview-card__label">// engineering notebook</span>
+      <h4 class="doc-preview-card__title">HG5_ELECTR!C — Full Engineering Notebook</h4>
+      <p class="doc-preview-card__desc">The complete season logbook…</p>
+      <a href="../docs/vex-notebook.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Open full PDF ↗</a>
+    </div>
+  </div>
 </section>
 
 <section class="container section--tight">
