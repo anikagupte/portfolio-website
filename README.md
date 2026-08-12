@@ -1,1 +1,1 @@
-View here: https://anikagupte.github.io/portfolio-website/
+https://anikagupte.com
