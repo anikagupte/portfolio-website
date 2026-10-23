@@ -1,0 +1,83 @@
+diff --git a/css/base.css b/css/base.css
+index e51218f..40f99c8 100644
+--- a/css/base.css
++++ b/css/base.css
+@@ -44,6 +44,9 @@ h1, h2, h3, h4 {
+ 
+ p { color: var(--slate); }
+ 
++/* Let long words / URLs wrap instead of widening the page on narrow phones */
++h1, h2, h3, h4, p, li, a, dd { overflow-wrap: anywhere; }
++
+ :focus-visible {
+   outline: 3px solid var(--pink);
+   outline-offset: 3px;
+diff --git a/css/layout.css b/css/layout.css
+index 61c18a8..7033292 100644
+--- a/css/layout.css
++++ b/css/layout.css
+@@ -6,10 +6,20 @@
+   position: sticky;
+   top: 0;
+   z-index: 1000;
++  border-bottom: 1px solid var(--hairline);
++}
++
++/* The frosted-glass background lives on a pseudo-element, NOT on .navbar itself.
++   backdrop-filter on .navbar makes it the containing block for the position:fixed
++   mobile menu, which squashes the menu and widens the page to 2x on phones. */
++.navbar::before {
++  content: '';
++  position: absolute;
++  inset: 0;
++  z-index: -1;
+   background: rgba(250, 248, 243, 0.85);
+   backdrop-filter: blur(14px);
+   -webkit-backdrop-filter: blur(14px);
+-  border-bottom: 1px solid var(--hairline);
+ }
+ 
+ .navbar__inner {
+diff --git a/css/projects.css b/css/projects.css
+index 66da941..fa2b0a7 100644
+--- a/css/projects.css
++++ b/css/projects.css
+@@ -293,6 +293,17 @@
+ }
+ .approach-table td.chosen { font-weight: 600; color: var(--navy); }
+ 
++/* Phones: let the table scroll sideways inside itself instead of widening the page */
++@media (max-width: 640px) {
++  .approach-table {
++    display: block;
++    overflow-x: auto;
++    -webkit-overflow-scrolling: touch;
++    font-size: 0.85rem;
++  }
++  .approach-table th, .approach-table td { padding: 0.7em 0.8em; min-width: 110px; }
++}
++
+ /* --- Content prose block (for write-up sections) --- */
+ .prose {
+   max-width: 720px;
+diff --git a/css/variables.css b/css/variables.css
+index 182919b..9579cfa 100644
+--- a/css/variables.css
++++ b/css/variables.css
+@@ -56,6 +56,16 @@
+   --t-med: 0.4s;
+ }
+ 
++/* Phones: the desktop spacing scale is far too generous (8rem section gaps) */
++@media (max-width: 640px) {
++  :root {
++    --space-m:   1.25rem;
++    --space-l:   2rem;
++    --space-xl:  3rem;
++    --space-xxl: 4.5rem;
++  }
++}
++
+ @media (prefers-reduced-motion: reduce) {
+   *, *::before, *::after {
+     animation-duration: 0.001ms !important;
