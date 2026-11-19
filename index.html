@@ -5,53 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anika Gupte — Computer Science Student &amp; Builder</title>
 <meta name="description" content="Year 13 computer science student building Revology, an AI cloud sustainability agent, and a 30K-follower educational platform. Applying to study CS at university.">
+<meta property="og:title" content="Anika Gupte — Computer Science Student &amp; Builder">
+<meta property="og:description" content="Revology, an AI cloud sustainability agent, a VEX robotics season and a 30K-follower educational platform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anikagupte.com">
+<meta property="og:image" content="https://anikagupte.com/images/anika-headshot-square.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body id="top">
 
-<nav class="navbar">
+<!-- Icon sprite, referenced by the <use> elements below -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+</svg>
+
+<a href="#work" class="skip-link">Skip to content</a>
+
+<nav class="navbar" aria-label="Main">
   <div class="navbar__inner">
-    <a href="index.html" class="navbar__logo">ANIKA<span>.</span>GUPTE</a>
+    <a href="#top" class="navbar__logo">ANIKA<span>.</span>GUPTE</a>
     <button class="navbar__burger" aria-label="Toggle navigation" aria-expanded="false">
       <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </button>
     <div class="navbar__links-wrap">
       <div class="navbar__links">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="content.html">Content</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#impact">Impact</a>
+        <a href="#beyond">About</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="navbar__socials">
-        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        </a>
-        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
-        </a>
+        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg fill="currentColor"><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok"><svg fill="currentColor"><use href="#i-tiktok"/></svg></a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
+<main>
+
+<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="container hero__inner">
     <div>
       <span class="eyebrow hero__eyebrow">year 13 · applying for computer science</span>
       <h1 class="hero__title">I build systems that think about <em>people</em> &amp; <em>sustainability</em>.</h1>
-      <p class="hero__lede">Hello! I’m a Year 13 student taking Computer Science (self-taught), Maths, Further Maths, Physics and Economics at A-Level. I'm planning on studying Computer Science at university for a future in software engineering and entrepreneurship.<br>
-        <br> Within Computer Science (CS), I’m particularly interested in technologies such as cloud computing and AI research. I’m actively seeking work experience in any CS-related area to learn more about various aspects of the field. My projects span web development, agentic AI, cloud solutions, financial applications and mathematical modelling.</p>
+      <p class="hero__lede">Year 13 student taking Computer Science (self-taught), Maths, Further Maths, Physics and Economics at A-Level, with a future in software engineering and entrepreneurship in mind. I'm most interested in cloud computing and AI research, and I'm actively seeking CS work experience. My projects span web development, agentic AI, cloud, financial applications and mathematical modelling.</p>
       <div class="hero__ctas">
-        <a href="projects.html" class="btn btn--primary">See my projects</a>
-        <a href="about.html" class="btn btn--ghost">More about me</a>
+        <a href="#work" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
       </div>
       <div class="hero__stats">
         <div>
@@ -59,214 +66,324 @@
           <div class="hero__stat-label">/ 980 teams, m3 challenge</div>
         </div>
         <div>
-          <div class="hero__stat-num">30K+</div>
-          <div class="hero__stat-label">students reached</div>
+          <div class="hero__stat-num">35M+</div>
+          <div class="hero__stat-label">views in a year</div>
         </div>
         <div>
-          <div class="hero__stat-num">3</div>
-          <div class="hero__stat-label">shipped projects</div>
+          <div class="hero__stat-num">30K+</div>
+          <div class="hero__stat-label">followers</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">2026</div>
+          <div class="hero__stat-label">london youth media champion</div>
         </div>
       </div>
     </div>
     <div class="hero__portrait-wrap">
       <div class="hero__portrait">
-        <img src="images/anika-headshot-square.png" alt="Anika Gupte">
+        <img src="images/anika-headshot-square.png" alt="Anika Gupte" width="230" height="230">
       </div>
       <span class="hero__portrait-caption">london, uk</span>
     </div>
   </div>
 </section>
 
-<!-- SYSTEM LOG (signature timeline) -->
-<section class="container section--tight">
+<!-- ============ WORK ============ -->
+<section class="container section--tight" id="work">
+  <div class="section-head">
+    <span class="mono-label">// selected work</span>
+    <h2>Three problems, three systems.</h2>
+    <p>An AI agent for startups who can't afford a cloud consultant. A robot that has to make decisions in real time. A revision platform for students who can't find their notes. Open any card for the full case study.</p>
+  </div>
+
+  <div class="proj-grid" data-stagger>
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">project / 01 — ai research</span>
+      <h3 class="proj-card__title">Cloud Sustainability Agent</h3>
+      <p class="proj-card__desc">A Gemini-powered decision-matrix tool that gives startups a sustainability-first cloud deployment plan in seconds. Tested against Airbnb, Spotify and Duolingo's real growth paths. Published on Zenodo.</p>
+      <div class="proj-card__stack"><span class="chip">Python</span><span class="chip">Gemini API</span><span class="chip">openpyxl</span></div>
+      <p class="proj-card__highlight"><strong>78% / 50%</strong> of leaders adopted cloud, but half can't see the return (PwC)</p>
+      <div class="proj-card__actions">
+        <a href="projects/cloud-sustainability.html" class="btn btn--primary">Case study</a>
+        <a href="https://github.com/anikagupte/cloud-deployment-agent" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </article>
+
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">project / 02 — robotics</span>
+      <h3 class="proj-card__title">HG5_ELECTR!C — VEX Robotics</h3>
+      <p class="proj-card__desc">Autonomous and driver-control code for a competition robot, written in C++ and Python. Qualified for UK Nationals 2026 on our first attempt.</p>
+      <div class="proj-card__stack"><span class="chip">C++</span><span class="chip">Python</span><span class="chip">VEXcode</span></div>
+      <p class="proj-card__highlight"><strong>1st-time team</strong> — same code, different outcome every match on real hardware</p>
+      <div class="proj-card__actions">
+        <a href="projects/vex-robotics.html" class="btn btn--primary">Case study</a>
+        <a href="https://github.com/anikagupte/HG5_ELECTRIC" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </article>
+
+    <article class="proj-card reveal">
+      <span class="proj-card__tag">project / 03 — web platform</span>
+      <h3 class="proj-card__title">Revology</h3>
+      <p class="proj-card__desc">A full-stack Django revision platform with a shared notes library, flashcards with red/amber/green confidence ratings, and PDF.js document previews. CREST Gold Award.</p>
+      <div class="proj-card__stack"><span class="chip">Django</span><span class="chip">Python</span><span class="chip">Bulma</span><span class="chip">JS</span></div>
+      <p class="proj-card__highlight"><strong>18 months</strong> of surveys, database design and iteration, from scratch</p>
+      <div class="proj-card__actions">
+        <a href="projects/revology.html" class="btn btn--primary">Case study</a>
+        <a href="https://github.com/anikagupte/revology" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="also-row">
+    <span class="also-row__label">// also</span>
+    <a href="docs/future-of-work.pdf" target="_blank" rel="noopener">The Future of Work (PDF) ↗</a>
+    <a href="https://github.com/anikagupte/competitive-programming" target="_blank" rel="noopener">Competitive programming — 100% in Bebras ↗</a>
+    <a href="#m3">M3 Challenge — sports gambling model</a>
+  </div>
+
+  <!-- System Log (signature timeline) -->
   <div class="syslog reveal">
     <div class="syslog__head">
       <h2>System Log</h2>
       <span class="mono-label">// chronological build history</span>
     </div>
     <div class="syslog__track-wrap">
-      <div class="syslog__track" id="syslogTrack">
-        <div class="syslog__node">
-          <span class="syslog__node-date">apr 2021</span>
-          <div class="syslog__node-title">Bronze CREST Award</div>
-          <p class="syslog__node-desc">Designed and created a model for the ideal game controller for a Nintendo Switch.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jul 2022</span>
-          <div class="syslog__node-title">Harvard CS50x</div>
-          <p class="syslog__node-desc">Completed Harvard University's Introduction to Computer Science at only 13 — first real exposure to algorithmic thinking, primarily using C++.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jul 2022</span>
-          <div class="syslog__node-title">Silver CREST Award</div>
-          <p class="syslog__node-desc">Programmed a scientific calculator website using JavaScript, HTML and CSS.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jan 2025 - jun 2026</span>
-          <div class="syslog__node-title">Revology</div>
-          <p class="syslog__node-desc">Created a Django-based edtech platform — combining student surveys and web development to create the ultimate revision resource.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jun – jul 2025</span>
-          <div class="syslog__node-title">STFC DevOps placement</div>
-          <p class="syslog__node-desc">Created an exporter handling pull request metrics in Python for the Scientific Computing department.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jun – jul 2025</span>
-          <div class="syslog__node-title">MBDA SWE placement</div>
-          <p class="syslog__node-desc">Developed the circuitry and embedded control system software for a model missile using a Raspberry Pi.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">nov 2025 - jun 2026</span>
-          <div class="syslog__node-title">Using AI to improve cloud sustainability</div>
-          <p class="syslog__node-desc">Built a Gemini-powered decision-matrix agent for sustainable cloud deployment — formally published on Zenodo.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">dec 2025 – feb 2026</span>
-          <div class="syslog__node-title">Leaf DDAI Fellowship</div>
-          <p class="syslog__node-desc">Selected as a finalist (top ~10%) for Leaf's Dilemmas and Dangers in AI course — five weeks ranging from neural networks and mechanistic interpretability to AI misalignment issues such as specification gaming.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">mar 2026</span>
-          <div class="syslog__node-title">U18 VEX Robotics Nationals</div>
-          <p class="syslog__node-desc">As a programmer in C++, our team reached Nationals through our use of creative programming, including a tank-drive steering system and match-versatility features.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">apr 2026</span>
-          <div class="syslog__node-title">M3 Challenge, NYC</div>
-          <p class="syslog__node-desc">Flown to Jane Street's headquarters in New York for placing 2nd of 980 teams worldwide in the Technical Computing Award.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">apr 2026 - present</span>
-          <div class="syslog__node-title">Workforce 2035 Council Member</div>
-          <p class="syslog__node-desc">Global advisory council, where our AI, Cognition and Human Thinking Lab's provocation asks, “Whose mind is at the table when AI joins the meeting?”.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jun 2026</span>
-          <div class="syslog__node-title">Portfolio Website</div>
-          <p class="syslog__node-desc">Experimenting with partially automated workflows and further discovering the wonders of UI/UX.</p>
-        </div>
-        <div class="syslog__node">
-          <span class="syslog__node-date">jul 2026 - present</span>
-          <div class="syslog__node-title">AI Researcher and Developer</div>
-          <p class="syslog__node-desc">Improving RAG retrieval strategies and fine-tuning multi-model VLM systems.</p>
-        </div>
-        <!--
-        <div class="syslog__node">
-          <span class="syslog__node-date">mar 2026 — present</span>
-          <div class="syslog__node-title">Secretary General, HabsMUN</div>
-          <p class="syslog__node-desc">Leading the planning of a three-day international conference for 500+ student delegates.</p>
-        </div>
-        -->
+      <div class="syslog__track" tabindex="0" aria-label="Build history, scrolls sideways">
+        <div class="syslog__node"><span class="syslog__node-date">apr 2021</span><div class="syslog__node-title">Bronze CREST Award</div><p class="syslog__node-desc">Designed and created a model for the ideal game controller for a Nintendo Switch.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jul 2022</span><div class="syslog__node-title">Harvard CS50x</div><p class="syslog__node-desc">Completed Harvard University's Introduction to Computer Science at only 13 — first real exposure to algorithmic thinking, primarily using C++.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jul 2022</span><div class="syslog__node-title">Silver CREST Award</div><p class="syslog__node-desc">Programmed a scientific calculator website using JavaScript, HTML and CSS.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jan 2025 - jun 2026</span><div class="syslog__node-title">Revology</div><p class="syslog__node-desc">Created a Django-based edtech platform — combining student surveys and web development to create the ultimate revision resource.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jun – jul 2025</span><div class="syslog__node-title">STFC DevOps placement</div><p class="syslog__node-desc">Created an exporter handling pull request metrics in Python for the Scientific Computing department.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jun – jul 2025</span><div class="syslog__node-title">MBDA SWE placement</div><p class="syslog__node-desc">Developed the circuitry and embedded control system software for a model missile using a Raspberry Pi.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">nov 2025 - jun 2026</span><div class="syslog__node-title">Using AI to improve cloud sustainability</div><p class="syslog__node-desc">Built a Gemini-powered decision-matrix agent for sustainable cloud deployment — formally published on Zenodo.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">dec 2025 – feb 2026</span><div class="syslog__node-title">Leaf DDAI Fellowship</div><p class="syslog__node-desc">Selected as a finalist (top ~10%) for Leaf's Dilemmas and Dangers in AI course — five weeks ranging from neural networks and mechanistic interpretability to AI misalignment issues such as specification gaming.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">mar 2026</span><div class="syslog__node-title">U18 VEX Robotics Nationals</div><p class="syslog__node-desc">As a programmer in C++, our team reached Nationals through our use of creative programming, including a tank-drive steering system and match-versatility features.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">apr 2026</span><div class="syslog__node-title">M3 Challenge, NYC</div><p class="syslog__node-desc">Flown to Jane Street's headquarters in New York for placing 2nd of 980 teams worldwide in the Technical Computing Award.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">apr 2026 - present</span><div class="syslog__node-title">Workforce 2035 Council Member</div><p class="syslog__node-desc">Global advisory council, where our AI, Cognition and Human Thinking Lab's provocation asks, “Whose mind is at the table when AI joins the meeting?”.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jun 2026</span><div class="syslog__node-title">Portfolio Website</div><p class="syslog__node-desc">Experimenting with partially automated workflows and further discovering the wonders of UI/UX.</p></div>
+        <div class="syslog__node"><span class="syslog__node-date">jul 2026 - present</span><div class="syslog__node-title">AI Researcher and Developer</div><p class="syslog__node-desc">Improving RAG retrieval strategies and fine-tuning multi-model VLM systems.</p></div>
       </div>
     </div>
     <p class="syslog__hint">← scroll →</p>
   </div>
 </section>
 
-<!-- PROJECTS TEASER -->
-<section class="container section">
-  <div class="section-head">
-    <span class="mono-label">// featured builds</span>
-    <h2>Three problems, three systems.</h2>
-    <p>An AI agent for startups who can't afford a cloud consultant. A robot that has to make decisions in real time. A revision platform for students who can't find their notes. Each taught me something different about robust code.</p>
-  </div>
-  <div class="proj-grid" data-stagger>
-    <article class="proj-card reveal">
-      <span class="proj-card__tag">project / 01 — AI research</span>
-      <h3 class="proj-card__title">Cloud Sustainability Agent</h3>
-      <p class="proj-card__desc">A Gemini-powered decision-matrix tool that gives startups a sustainability-first cloud deployment plan in seconds. Tested against Airbnb, Spotify and Duolingo's real growth paths.</p>
-      <div class="proj-card__stack">
-        <span class="chip">Python</span><span class="chip">Gemini API</span><span class="chip">openpyxl</span>
+<!-- ============ IMPACT ============ -->
+<section class="container section--tight" id="impact">
+  <div class="impact-stack">
+
+    <div class="content-hero reveal">
+      <span class="eyebrow" style="color:var(--pink);">// @anika.studies</span>
+      <h2>Educational content, transformed into a business.</h2>
+      <p>I started posting study content during my GCSEs to fill a gap I kept noticing — revision advice that was actually specific, not generic "just work hard" platitudes. It grew into a registered company with brand partnerships, contracts and a talent management deal, and taught me negotiation, contract-reading and what really holds attention.</p>
+      <div class="content-hero__stats">
+        <div class="content-hero__stat"><div class="content-hero__stat-num">30K+</div><div class="content-hero__stat-label">followers, TikTok &amp; Instagram</div></div>
+        <div class="content-hero__stat"><div class="content-hero__stat-num">35M</div><div class="content-hero__stat-label">views in one year</div></div>
+        <div class="content-hero__stat"><div class="content-hero__stat-num">36+</div><div class="content-hero__stat-label">brand partnerships</div></div>
+        <div class="content-hero__stat"><div class="content-hero__stat-num">Director</div><div class="content-hero__stat-label">Anika Studies Ltd</div></div>
       </div>
-      <a href="projects/cloud-sustainability.html" class="proj-card__link">View project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
-    </article>
-    <article class="proj-card reveal">
-      <span class="proj-card__tag">project / 02 — robotics</span>
-      <h3 class="proj-card__title">HG5_ELECTR!C — VEX Robotics</h3>
-      <p class="proj-card__desc">Autonomous and driver-control code for a competition robot, written in C++ and Python. Qualified for UK Nationals 2026 on our first attempt.</p>
-      <div class="proj-card__stack">
-        <span class="chip">C++</span><span class="chip">Python</span><span class="chip">VEXcode</span>
+    </div>
+
+    <div class="taplab-card reveal">
+      <div class="taplab-card__preview">
+        <img src="images/anika@taplab.png" alt="Anika's TapLab profile page" class="taplab-card__preview-img" loading="lazy">
       </div>
-      <a href="projects/vex-robotics.html" class="proj-card__link">View project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
-    </article>
-    <article class="proj-card reveal">
-      <span class="proj-card__tag">project / 03 — web platform</span>
-      <h3 class="proj-card__title">Revology</h3>
-      <p class="proj-card__desc">A full-stack Django revision platform with a shared notes library, flashcards with red/amber/green (RAG) confidence ratings, and PDF.js-powered document previews.</p>
-      <div class="proj-card__stack">
-        <span class="chip">Django</span><span class="chip">Python</span><span class="chip">Bulma</span><span class="chip">JS</span>
+      <div class="taplab-card__body">
+        <span class="taplab-card__label">// talent management</span>
+        <h3>TapLab Agency</h3>
+        <p>TapLab represents educational content creators specifically — not lifestyle, not gaming, just study and edtech content. They've been central to turning a hobby into something with real brand relationships and structure. Brand enquiries go through them.</p>
+        <a href="https://www.taplab.agency/roster/anika" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:var(--space-s)">View my TapLab profile ↗</a>
       </div>
-      <a href="projects/revology.html" class="proj-card__link">View project <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
-    </article>
+    </div>
+
+    <div>
+      <div class="section-head impact-sub">
+        <span class="mono-label">// 36+ partnerships, including</span>
+        <h2>Brands I've worked with</h2>
+      </div>
+      <div class="brand-grid reveal" data-stagger>
+        <div class="brand-tile"><img src="images/logos/logitech.png" alt="Logitech" loading="lazy"></div>
+        <div class="brand-tile"><img src="images/logos/anker.png" alt="Anker" loading="lazy"></div>
+        <div class="brand-tile"><img src="images/logos/thestudentroom.png" alt="The Student Room" loading="lazy"></div>
+        <div class="brand-tile"><img src="images/logos/hollister.png" alt="Hollister" loading="lazy"></div>
+        <div class="brand-tile"><img src="images/logos/collins.png" alt="Collins" loading="lazy"></div>
+        <div class="brand-tile"><img src="images/logos/medly.png" alt="Medly" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-head impact-sub">
+        <span class="mono-label">// from the feed</span>
+        <h2>Highlights</h2>
+      </div>
+      <div class="post-feed" data-stagger>
+        <article class="post-card reveal">
+          <div class="post-card__media"><img src="images/blogs/lyaa.jpeg" alt="London Youth Media Champion 2026" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__meta"><span class="pink">#LYAA26</span><span>·</span><span>May 2026</span></div>
+            <h3 class="post-card__title">London Youth Media Champion 2026</h3>
+            <p class="post-card__desc">Named "Studytokker" Young Media Champion by The London Assembly, for identifying the gap in revision-resource access between students and building Revology, plus an accessible social platform, to close it.</p>
+            <div class="post-card__footer"><span class="post-card__stats">71 reactions · 3 comments</span><a href="https://lnkd.in/p/e27dFmNP" target="_blank" rel="noopener" class="post-card__linkedin">View on LinkedIn ↗</a></div>
+          </div>
+        </article>
+        <article class="post-card reveal">
+          <div class="post-card__media"><img src="images/blogs/m3.jpeg" alt="M3 Challenge team photo" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__meta"><span class="pink">#M3Challenge</span><span>·</span><span>Apr 2026</span></div>
+            <h3 class="post-card__title">This time last week, I stood in Jane Street.</h3>
+            <p class="post-card__desc">My team was flown from London to Jane Street's NYC headquarters for the M3 MathWorks Math Modeling Challenge. We tackled online sports gambling in 14 hours — regression models, a GUI in Python and MATLAB — and placed 2nd of 980 teams for Technical Computing.</p>
+            <div class="post-card__footer"><span class="post-card__stats">Team: Haberdashers' Elstree Schools</span><a href="https://www.linkedin.com/posts/anika-gupte_m3challenge-janestreet-technicalcomputing-activity-7456995253804290048-earm" target="_blank" rel="noopener" class="post-card__linkedin">View on LinkedIn ↗</a></div>
+          </div>
+        </article>
+        <article class="post-card reveal">
+          <div class="post-card__media"><img src="images/blogs/vex.jpeg" alt="VEX Nationals team photo" loading="lazy"></div>
+          <div class="post-card__body">
+            <div class="post-card__meta"><span class="pink">#VEXRobotics</span><span>·</span><span>Mar 2026</span></div>
+            <h3 class="post-card__title">There aren't many LinkedIn posts about failure. So here's one.</h3>
+            <p class="post-card__desc">As a first-time team, qualifying for UK Nationals already felt like a win. We didn't make Worlds — batteries, match replays, bad luck — but the real takeaway was about hardware unpredictability and what "robust code" actually means once it leaves a simulator.</p>
+            <div class="post-card__footer"><span class="post-card__stats">102 reactions · 4,078 impressions</span><a href="https://www.linkedin.com/posts/anika-gupte_vexrobotics-robotics-computerscience-activity-7435713079843373057-3S5J" target="_blank" rel="noopener" class="post-card__linkedin">View on LinkedIn ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTENT + ABOUT TEASER -->
-<section class="container section--tight">
-  <div class="split-teasers">
-    <div class="teaser-card teaser-card--pink reveal">
-      <div class="teaser-card__icon-row">
-        <div class="teaser-stat">
-          <div class="teaser-stat__num">30K+</div>
-          <div class="teaser-stat__label">followers, @anika.studies</div>
-        </div>
-        <div class="teaser-stat">
-          <div class="teaser-stat__num">35M</div>
-          <div class="teaser-stat__label">views in the last year</div>
-        </div>
+<!-- ============ ABOUT ============ -->
+<section class="container section--tight" id="beyond">
+  <div class="about-hero reveal">
+    <div class="about-hero__text">
+      <span class="eyebrow">// about</span>
+      <h2 class="subhead" style="margin-top:var(--space-xs)">Logical thinking in different scenarios.</h2>
+      <p>Outside academics I'm a student athlete who has competed at Nationals in three sports, Head of MUN Club at school, and Secretary General of HabsMUN 2027 — an international conference expecting 500+ students. The educational content I create ties it all together.</p>
+    </div>
+    <div class="about-hero__sidebar">
+      <dl class="fact-list">
+        <dt>school</dt><dd>Haberdashers' Girls' School</dd>
+        <dt>studying</dt><dd>A-Levels — Maths, Further Maths, Physics, Economics, Computer Science (self-taught)</dd>
+        <dt>based in</dt><dd>London, UK</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- M3 -->
+  <div class="m3-block reveal" id="m3" style="margin-top:var(--space-xl)">
+    <div class="m3-block__media"><img src="images/blogs/m3.jpeg" alt="M3 Challenge team photo" loading="lazy"></div>
+    <div class="m3-block__body">
+      <span class="mono-label">// competition mathematics</span>
+      <h3 style="font-size:var(--fs-display-m);margin:0.2em 0 0.4em">2nd of 980 teams, Jane Street, NYC</h3>
+      <p>In February our team had 14 hours to complete SIAM's M3 Challenge. Modelling online sports gambling through exponential stake escalation and loss-chasing predictions, we placed 2nd of 980 worldwide for Technical Computing, with a trip to Jane Street to present our work.</p>
+    </div>
+  </div>
+
+  <!-- Leadership -->
+  <h3 class="subhead">Leadership, in different uniforms</h3>
+  <div class="bridge-list" data-stagger>
+    <article class="bridge-card reveal">
+      <div class="bridge-card__top">
+        <div class="bridge-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <span class="bridge-card__role">Secretary General, HabsMUN 2027</span>
       </div>
-      <h3>Educational content, transformed into a business.</h3>
-      <p>Director of Anika Studies Ltd - working with brands including Logitech, Anker and The Student Room. Learning marketing, negotiation and effective communication.</p>
-      <a href="content.html" class="btn btn--light">See the content side →</a>
-    </div>
-    <div class="teaser-card teaser-card--cream reveal">
-      <h3>Beyond the keyboard.</h3>
-      <p>On a mission maximising my life; Senior Prefect, RAF cadet Flight Sergeant, gymnastics coach, MUN Secretary General and more...</p>
-      <a href="about.html" class="btn btn--ghost">Read the full story →</a>
-    </div>
+      <h3>Running a 500+ delegate conference</h3>
+      <p>I lead planning of a three-day international conference, after chairing my school's MUN club and becoming the youngest student selected to chair a 40-delegate room at HabsMUN 2025. AI regulation is this year's Crisis Committee topic.</p>
+      <p class="bridge">→ <strong>The bridge:</strong> coordinating 500 people is coordinating a distributed system — clear protocols, graceful failure, edge cases thought through in advance.</p>
+    </article>
+    <article class="bridge-card reveal">
+      <div class="bridge-card__top">
+        <div class="bridge-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.5v9L12 22l-9-6.5v-9z"/><path d="M12 22V11"/><path d="M21 6.5L12 11 3 6.5"/></svg></div>
+        <span class="bridge-card__role">RAF Cadet — Flight Sergeant</span>
+      </div>
+      <h3>Cyber team to 1st place, Royal Air Squadron Trophy</h3>
+      <p>As a Combined Cadet Force cadet since 2023, I led our 14-cadet squad's cyber team to first place defending a simulated RAF Air Cadets portal against a live hacking attempt — 3rd overall and through to the UK Nationals Finals.</p>
+      <p class="bridge">→ <strong>The bridge:</strong> the simulation made me think hard about what the same attack would mean against the real MoD — which is why cybersecurity feels concrete, not abstract.</p>
+    </article>
+    <article class="bridge-card reveal">
+      <div class="bridge-card__top">
+        <div class="bridge-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+        <span class="bridge-card__role">Gymnastics Coach, UKCC Level 1</span>
+      </div>
+      <h3>Coaching, and learning how to explain things</h3>
+      <p>I coach weekly at E.J.B. Gymnastics Club, mentoring younger athletes in a sport I compete in at Nationals — the same skill that makes my educational content work.</p>
+      <p class="bridge">→ <strong>The bridge:</strong> teaching a ten-year-old a back walkover and teaching 30,000 students a study technique both mean knowing which step they're actually stuck on.</p>
+    </article>
+    <article class="bridge-card reveal">
+      <div class="bridge-card__top">
+        <div class="bridge-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.9 2.9M16.2 16.2l2.9 2.9M2 12h4M18 12h4M4.9 19.1l2.9-2.9M16.2 7.8l2.9-2.9"/></svg></div>
+        <span class="bridge-card__role">Senior Prefect — Head of Upper School</span>
+      </div>
+      <h3>Responsible for 375 students, Year 9 to 11</h3>
+      <p>As part of the Class of '27 Senior Prefect Team, alongside House Sports Representative, Trampolining (Nationals) and Lacrosse Senior Team (Nationals). Winner of the Audley Twiston Davies Cup for public speaking.</p>
+      <p class="bridge">→ <strong>The bridge:</strong> owning hundreds of people's day-to-day experience at school was the closest thing to product ownership I had before I knew the term.</p>
+    </article>
+  </div>
+
+  <!-- Speech -->
+  <div class="speech-block reveal" style="margin-top:var(--space-xl)">
+    <div class="speech-block__quote">The question isn't whether children will use AI, it's whether we've prepared them to use it well.</div>
+    <p>From a speech I gave as a student panelist at the Girls' Schools Association's Pastoral Excellence Conference — including a live demo of Check Point's "Gandalf" AI jailbreak challenge to show younger students the real risks of agentic AI.</p>
+    <span class="speech-block__meta">GSA Pastoral Excellence Conference · hosted at Haberdashers' Girls' School</span>
+  </div>
+
+  <!-- Awards -->
+  <h3 class="subhead">Honours &amp; awards</h3>
+  <div class="awards-list reveal">
+    <div class="award-row"><span class="award-row__date">Apr 2026 · M3 Challenge</span><span class="award-row__title">Technical Computing Runner-Up (2nd of 980) — Double Scholarship</span></div>
+    <div class="award-row"><span class="award-row__date">Mar 2026 · Northeastern University London</span><span class="award-row__title">Finalist, AI Futures Challenge — 1,301 entries, 84 countries</span></div>
+    <div class="award-row"><span class="award-row__date">Dec 2025 · Habs Girls' School</span><span class="award-row__title">Audley Twiston Davies Cup — public speaking</span></div>
+    <div class="award-row"><span class="award-row__date">Jul 2024 · Habs Girls' School</span><span class="award-row__title">All Round Sports Achievement, Year 10 (1 of 125)</span></div>
+    <div class="award-row"><span class="award-row__date">Feb 2024 · UKMT</span><span class="award-row__title">Intermediate Maths Challenge — Gold (top 8%)</span></div>
+    <div class="award-row"><span class="award-row__date">2021–22 · British Science Association</span><span class="award-row__title">Bronze &amp; Silver CREST Awards</span></div>
+    <div class="award-row"><span class="award-row__date">Jan 2021 · STFC Rutherford Appleton Laboratory</span><span class="award-row__title">Finalist, STFC RAL School Science Prize</span></div>
+  </div>
+
+  <!-- Certifications -->
+  <h3 class="subhead">Selected certifications</h3>
+  <div class="cert-chips">
+    <span class="chip">CS50 Introduction to Computer Science — HarvardX (2022)</span>
+    <span class="chip">Leadership &amp; Communication — HarvardX (2022)</span>
+    <span class="chip">Unlocking AI &amp; Computer Science — King's College London (2024)</span>
+    <span class="chip">Virtual Insight Programme — PwC (2025)</span>
+    <span class="chip">Level 1 Coaching Gymnastics — British Gymnastics (2026)</span>
+    <span class="chip">Music Theory Gr 5 (Distinction) · Piano Gr 6 (Merit)</span>
   </div>
 </section>
 
-<footer class="footer">
+</main>
+
+<!-- ============ CONTACT + FOOTER ============ -->
+<section class="contact-band" id="contact">
   <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="footer__brand">Anika<span>.</span>Gupte</div>
-        <p class="footer__tagline">Year 13 computer science student, building systems that think about sustainability, education and trust.</p>
+    <div class="contact-band__inner">
+      <div class="contact-band__main">
+        <span class="mono-label">// get in touch</span>
+        <h2>Let's talk.</h2>
+        <p>University applications, a technical question about a project, a brand partnership or a summer role — I'd love to hear from you.</p>
+        <a href="mailto:anikagupte@gmail.com" class="contact-band__email">anikagupte@gmail.com →</a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener"><svg fill="currentColor"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a href="https://github.com/anikagupte" target="_blank" rel="noopener"><svg fill="currentColor"><use href="#i-github"/></svg>GitHub</a>
+          <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener"><svg fill="currentColor"><use href="#i-tiktok"/></svg>@anika.studies</a>
+          <a href="https://www.taplab.agency/roster/anika" target="_blank" rel="noopener">TapLab ↗</a>
+        </div>
       </div>
-      <div class="footer__links">
-        <span class="footer__heading">sitemap</span>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="content.html">Content Creation</a>
-        <a href="about.html">About &amp; Other</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer__links">
-        <span class="footer__heading">elsewhere</span>
-        <a href="https://github.com/anikagupte" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener">TikTok ↗</a>
-        <a href="https://www.taplab.agency/roster/anika" target="_blank" rel="noopener">TapLab ↗</a>
+      <div class="contact-band__side">
+        <div class="contact-notes">
+          <h3>Before you reach out —</h3>
+          <ul>
+            <li>All project code is public on <a href="https://github.com/anikagupte" target="_blank" rel="noopener">GitHub</a></li>
+            <li>Full CV available on request by email</li>
+            <li>Content partnership enquiries usually go via TapLab</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <span>&copy; 2026 anika gupte. all rights reserved.</span>
-      <div class="footer__socials">
-        <a href="https://www.linkedin.com/in/anika-gupte/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        </a>
-        <a href="https://github.com/anikagupte" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.69-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
-        </a>
-        <a href="https://www.tiktok.com/@anika.studies" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-.34-1.74V3.6h-3.16v12.6c0 1.55-1.26 2.8-2.8 2.8a2.8 2.8 0 0 1-1.4-5.23 4 4 0 0 1 1.4-.25V9.83a6.6 6.6 0 0 0-1.4-.15 6.42 6.42 0 1 0 6.42 6.42V9.4a7.3 7.3 0 0 0 4.28 1.38V7.6a4.26 4.26 0 0 1-2.4-.78 4.28 4.28 0 0 1-.6-1z"/></svg>
-        </a>
-      </div>
+    <div class="contact-band__bottom">
+      <span class="footer-brand">Anika<span>.</span>Gupte</span>
+      <span>&copy; 2026 anika gupte · london, uk</span>
     </div>
   </div>
-</footer>
+</section>
 
 <script src="js/main.js"></script>
 </body>
