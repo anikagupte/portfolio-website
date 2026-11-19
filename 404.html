@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page not found — Anika Gupte</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #FAF8F3; color: #0F1B2D; display: grid; place-items: center; min-height: 100vh; margin: 0; text-align: center; padding: 1.5rem; }
+  a { color: #FF3D81; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>That page has moved.</h1>
+  <p>This page has moved. <a href="/">Go to the homepage →</a></p>
+</main>
+<script>
+  // Old section-page URLs → the matching section of the home page.
+  // Works on any static host that serves 404.html for unknown paths.
+  (function () {
+    var path = location.pathname.replace(/\.html$/, '').replace(/\/+$/, '').toLowerCase();
+    var map = {
+      '/projects': '#work',
+      '/content': '#impact',
+      '/about': '#beyond',
+      '/contact': '#contact'
+    };
+    if (map[path]) location.replace('/' + map[path]);
+  })();
+</script>
+</body>
+</html>
