@@ -39,6 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) setActive('contact');
   }, { passive: true });
 
+  /* ---------- Theme toggle (the initial theme is set by a tiny script in <head>) ---------- */
+  const toggles = $$('.theme-toggle');
+  const syncToggles = () => {
+    const dark = root.getAttribute('data-theme') === 'dark';
+    toggles.forEach(btn => {
+      btn.setAttribute('aria-pressed', String(dark));
+      btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  };
+  syncToggles();
+  toggles.forEach(btn => btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncToggles();
+  }));
+
   /* ---------- 3. Reveal on scroll ---------- */
   const revealEls = $$('.reveal');
   if ('IntersectionObserver' in window) {
